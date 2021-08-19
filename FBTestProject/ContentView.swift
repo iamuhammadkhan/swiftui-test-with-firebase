@@ -8,9 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject private var viewModel = UserViewModel()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List(viewModel.users) { user in
+                VStack(alignment: .leading) {
+                    Text(user.firstName).font(.title)
+                    Text(user.lastName).font(.subheadline)
+                }
+            }
+            .navigationTitle("Users")
+            .onAppear() {
+                self.viewModel.fetchData()
+            }
+        }
     }
 }
 

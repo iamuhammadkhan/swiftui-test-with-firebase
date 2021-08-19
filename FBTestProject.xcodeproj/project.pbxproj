@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,10 @@
 		3E9A609E26CC023D003F5939 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9A609D26CC023D003F5939 /* ContentView.swift */; };
 		3E9A60A026CC023F003F5939 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E9A609F26CC023F003F5939 /* Assets.xcassets */; };
 		3E9A60A326CC023F003F5939 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E9A60A226CC023F003F5939 /* Preview Assets.xcassets */; };
+		3E9A60AB26CC02F3003F5939 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E9A60AA26CC02F3003F5939 /* GoogleService-Info.plist */; };
+		3E9A60AE26CC0666003F5939 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9A60AD26CC0666003F5939 /* User.swift */; };
+		3E9A60B126CC06D1003F5939 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9A60B026CC06D1003F5939 /* UserViewModel.swift */; };
+		DC8B92FEDE9027B220A9F041 /* Pods_FBTestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD9B114DE48825518795B40 /* Pods_FBTestProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,12 @@
 		3E9A609F26CC023F003F5939 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E9A60A226CC023F003F5939 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3E9A60A426CC023F003F5939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E9A60AA26CC02F3003F5939 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3E9A60AD26CC0666003F5939 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3E9A60B026CC06D1003F5939 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		7BD9B114DE48825518795B40 /* Pods_FBTestProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBTestProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A43E155BABB77F38D164AE0A /* Pods-FBTestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBTestProject.debug.xcconfig"; path = "Target Support Files/Pods-FBTestProject/Pods-FBTestProject.debug.xcconfig"; sourceTree = "<group>"; };
+		D669FF07CDCE02E12E07F851 /* Pods-FBTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBTestProject.release.xcconfig"; path = "Target Support Files/Pods-FBTestProject/Pods-FBTestProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC8B92FEDE9027B220A9F041 /* Pods_FBTestProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +49,8 @@
 			children = (
 				3E9A609A26CC023D003F5939 /* FBTestProject */,
 				3E9A609926CC023D003F5939 /* Products */,
+				AE9FA2BC6C8F61E101CBAD20 /* Pods */,
+				590A24DA48B83824B6780A14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,9 +65,12 @@
 		3E9A609A26CC023D003F5939 /* FBTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				3E9A60AF26CC06B9003F5939 /* ViewModels */,
+				3E9A60AC26CC0655003F5939 /* Models */,
 				3E9A609B26CC023D003F5939 /* FBTestProjectApp.swift */,
 				3E9A609D26CC023D003F5939 /* ContentView.swift */,
 				3E9A609F26CC023F003F5939 /* Assets.xcassets */,
+				3E9A60AA26CC02F3003F5939 /* GoogleService-Info.plist */,
 				3E9A60A426CC023F003F5939 /* Info.plist */,
 				3E9A60A126CC023F003F5939 /* Preview Content */,
 			);
@@ -69,6 +85,39 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		3E9A60AC26CC0655003F5939 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3E9A60AD26CC0666003F5939 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3E9A60AF26CC06B9003F5939 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3E9A60B026CC06D1003F5939 /* UserViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		590A24DA48B83824B6780A14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BD9B114DE48825518795B40 /* Pods_FBTestProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE9FA2BC6C8F61E101CBAD20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A43E155BABB77F38D164AE0A /* Pods-FBTestProject.debug.xcconfig */,
+				D669FF07CDCE02E12E07F851 /* Pods-FBTestProject.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E9A60A726CC023F003F5939 /* Build configuration list for PBXNativeTarget "FBTestProject" */;
 			buildPhases = (
+				64D9412B8018295A08118620 /* [CP] Check Pods Manifest.lock */,
 				3E9A609426CC023D003F5939 /* Sources */,
 				3E9A609526CC023D003F5939 /* Frameworks */,
 				3E9A609626CC023D003F5939 /* Resources */,
+				7FA1232CE8B47C9216AD01ED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,10 +179,53 @@
 			files = (
 				3E9A60A326CC023F003F5939 /* Preview Assets.xcassets in Resources */,
 				3E9A60A026CC023F003F5939 /* Assets.xcassets in Resources */,
+				3E9A60AB26CC02F3003F5939 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64D9412B8018295A08118620 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FBTestProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FA1232CE8B47C9216AD01ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FBTestProject/Pods-FBTestProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FBTestProject/Pods-FBTestProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FBTestProject/Pods-FBTestProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3E9A609426CC023D003F5939 /* Sources */ = {
@@ -139,7 +233,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E9A609E26CC023D003F5939 /* ContentView.swift in Sources */,
+				3E9A60B126CC06D1003F5939 /* UserViewModel.swift in Sources */,
 				3E9A609C26CC023D003F5939 /* FBTestProjectApp.swift in Sources */,
+				3E9A60AE26CC0666003F5939 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +360,7 @@
 		};
 		3E9A60A826CC023F003F5939 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A43E155BABB77F38D164AE0A /* Pods-FBTestProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +383,7 @@
 		};
 		3E9A60A926CC023F003F5939 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D669FF07CDCE02E12E07F851 /* Pods-FBTestProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
